@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  vosk-server:
+    build:
+      context: docker
+      dockerfile: Dockerfile.kaldi-en
+    ports:
+      - 2700:2700
+    container_name: vosk-server
