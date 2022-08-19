@@ -8,3 +8,4 @@ services:
     ports:
       - 2700:2700
     container_name: vosk-server
+    restart: always
